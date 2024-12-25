@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f5f5f5"/>
+
+    <!-- Client/Frontend Section -->
+    <g transform="translate(50, 50)">
+        <!-- Frontend Box -->
+        <rect width="200" height="300" rx="10" fill="#FF9999" stroke="#333" stroke-width="2"/>
+        <text x="100" y="30" text-anchor="middle" font-weight="bold">Frontend (Angular)</text>
+        
+        <!-- Frontend Components -->
+        <rect x="20" y="50" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="75" text-anchor="middle">Components</text>
+        
+        <rect x="20" y="100" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="125" text-anchor="middle">Services</text>
+        
+        <rect x="20" y="150" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="175" text-anchor="middle">Guards</text>
+        
+        <rect x="20" y="200" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="225" text-anchor="middle">Interceptors</text>
+    </g>
+
+    <!-- Backend Section -->
+    <g transform="translate(550, 50)">
+        <!-- Backend Box -->
+        <rect width="200" height="300" rx="10" fill="#99FF99" stroke="#333" stroke-width="2"/>
+        <text x="100" y="30" text-anchor="middle" font-weight="bold">Backend (Spring)</text>
+        
+        <!-- Backend Components -->
+        <rect x="20" y="50" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="75" text-anchor="middle">REST Controllers</text>
+        
+        <rect x="20" y="100" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="125" text-anchor="middle">Services</text>
+        
+        <rect x="20" y="150" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="175" text-anchor="middle">Repositories</text>
+        
+        <rect x="20" y="200" width="160" height="40" rx="5" fill="#fff" stroke="#333"/>
+        <text x="100" y="225" text-anchor="middle">Security</text>
+    </g>
+
+    <!-- Database Section -->
+    <g transform="translate(300, 400)">
+        <!-- Database Icon -->
+        <rect width="200" height="60" rx="10" fill="#9999FF" stroke="#333" stroke-width="2"/>
+        <text x="100" y="35" text-anchor="middle" font-weight="bold">MySQL Database</text>
+    </g>
+
+    <!-- Connecting Arrows -->
+    <!-- Frontend to Backend -->
+    <path d="M 250 200 L 550 200" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- Backend to Database -->
+    <path d="M 650 350 L 400 400" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Arrow Marker Definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+        </marker>
+    </defs>
+
+    <!-- Labels -->
+    <text x="400" y="180" text-anchor="middle">HTTP/REST API Calls</text>
+    <text x="400" y="195" text-anchor="middle">avec JWT Token</text>
+    <text x="550" y="380" text-anchor="middle">JPA/Hibernate</text>
+
+    <!-- Users Icon -->
+    <g transform="translate(50, 400)">
+        <circle cx="30" cy="30" r="20" fill="#FFB366" stroke="#333" stroke-width="2"/>
+        <text x="30" y="70" text-anchor="middle">Users</text>
+    </g>
+</svg>
