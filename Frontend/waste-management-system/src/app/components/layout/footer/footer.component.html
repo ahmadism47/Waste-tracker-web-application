@@ -1,0 +1,36 @@
+
+<footer class="footer">
+    <div class="footer-content">
+       
+        <div class="footer-links">
+            <a routerLink="/home" routerLinkActive="active">
+            Accueil
+            </a>
+            <a routerLink="/about" routerLinkActive="active">
+            A Propos
+            </a>
+            <a routerLink="/services" routerLinkActive="active">
+            Services
+            </a>
+            <a routerLink="/contact" routerLinkActive="active">
+            Contactez-nous
+            </a>
+            <a routerLink="/faqs" routerLinkActive="active">
+            FAQs
+            </a>
+        </div>
+
+        <div class="social-icons">
+            <!-- container: it is not a real element in the DOM,  used for hosting like *ngIf, *ngFor -->
+            <ng-container *ngFor="let social of socialLinks">
+                <a [href]="social.url" target="_blank">  <!-- _blank: open the link in the new browser tab ;;;; [href]: so the value of social.url is setted in href and not literally social.url-->
+                 <i [class]="social.icon"></i> <!--i for icon-->
+                </a>
+            </ng-container>
+        </div>
+
+        <div class="copyright">
+            Non Copyrighted  2024  Upload by SIG
+        </div>
+    </div>
+</footer>

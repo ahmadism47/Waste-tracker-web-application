@@ -1,0 +1,90 @@
+ .home-container {
+    width: 100%;
+    min-height: 100vh;
+    background: #f7fafc;
+ }
+
+ .section {
+    padding: 4rem 2rem;
+    width: 100%;
+ }
+ 
+
+ .content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2px;
+ }
+
+.image-conatiner { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    height: 25rem;
+}
+
+.content-card{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-description{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: incline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+
+}
+
+.cta-button:hover{
+    background-color: #333;
+}
+
+.semi-circle {
+    width: 450px;
+    height: 320px;
+    background-image: linear-gradient(to bottom right, #FFA500, #FFD700);
+    border-radius: 30% 70% 83% 17% / 35% 73% 27% 65%;
+    position: relative; /* makes this a positioning context for absolute children (the next one)*/
+  }
+  
+  .truck-image {
+    position: absolute; /*takes it out of the normal flow*/
+    bottom: 0; /*align to the bottom of the semi circle*/
+    left: 50%; /* put it in the center of  the container, But this alone doesn't center the image because the image starts from that center point */
+    transform: translateX(-50%); /*shiftong the value -50% from its own width*/
+    height: 80%;
+    width: auto;
+  }
+

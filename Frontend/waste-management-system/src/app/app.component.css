@@ -1,0 +1,10 @@
+:host { /*apply the style to all the elements in the component*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 60px; /* Height of the fixed header */
+    flex: 1;
+}

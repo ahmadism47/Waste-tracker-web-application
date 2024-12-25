@@ -1,0 +1,47 @@
+
+<header class="header">
+    <nav class="navbar">
+
+        <a routerLink="/" class="navbar-brand">SIG</a>
+
+        <div class="nav-items">
+            <a routerLink="/home"
+                routerLinkActive="active" 
+                class="nav-link">
+                 Accueil 
+                </a>
+
+            <a routerLink="/portal"
+                routerLinkActiv="active"
+                class="nav-link">
+                 Métiers 
+                </a>
+            
+            <a routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link">
+                 Contact 
+                </a>
+            <ng-container *ngIf="!(isAuthenticated$ | async)"> <!-- async is mandatory because isAuth is an ibservable <=> subscribe()-->
+            <a routerLink="/login"
+                class="login-button">
+                 Se Connecter 
+                </a>
+            </ng-container>
+
+            <ng-container *ngIf="(isAuthenticated$ | async)"> <!-- async is mandatory because isAuth is an ibservable <=> subscribe()-->
+                <button (click) ="logout()" class="logout-button">Se Déconnecter</button>
+            </ng-container>
+
+        </div>
+    </nav>
+
+    <div class="language-selector">
+        <button (click)="changeLanguage('fr')" [class.active]="currentLang === 'fr'">
+            Français
+        </button>
+        <button (click)="changeLanguage('en')" [class.active]="currentLang === 'en'">
+            English
+        </button>
+    </div>
+</header>

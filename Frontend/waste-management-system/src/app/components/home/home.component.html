@@ -1,0 +1,53 @@
+
+<main class="home-container">
+ <!-- Hero section -->
+    <section class="section hero-section">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img [src]="sections.hero.imageUrl" [alt]="sections.hero.title" class="section-image" >
+            </div>
+            <div class="content-card">
+                <h1 class="section-title">{{ sections.hero.title }}</h1>
+                <p class="section-description">{{ sections.hero.description }}</p>
+                <a [routerLink]="sections.hero.buttonLink" class="cta-button">
+                    {{ sections.hero.buttonText }}
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Analysis Section -->
+    <section class="section analysis-section">
+        <div class="content-wrapper">
+            <div class="image-container">
+                <img [src]="sections.analysis.imageUrl" [alt]="sections.hero.title" class="section-image" >
+            </div>
+            <div class="content-card">
+                <h1 class="section-title">{{ sections.analysis.title }}</h1>
+                <p class="section-description">{{ sections.analysis.description }}</p>
+                <a [routerLink]="sections.analysis.buttonLink" class="cta-button">
+                    {{ sections.analysis.buttonText }}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Sector -->
+    <section class="section service-section">
+        <div class="content-wrapper">
+            <div class="image-container semi-circle">
+                <img [src]="sections.service.imageUrl" [alt]="sections.hero.title" class="truck-image" >
+            </div>
+            <div class="content-card">
+                <h1 class="section-title">{{ sections.service.title }}</h1>
+                <p class="section-description">{{ sections.service.description }}</p>
+                <a [routerLink]="sections.service.buttonLink" class="cta-button">
+                    {{ sections.service.buttonText }}
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+</main>
